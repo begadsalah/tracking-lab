@@ -1,1 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tracking Lab</title>
+</head>
 
+<body>
+
+<h1>Server Side Tracking Test</h1>
+
+<button onclick="buy()">Buy Product</button>
+
+<script>
+function buy(){
+  dataLayer.push({
+    event: "purchase",
+    value: 50,
+    currency: "EUR"
+  });
+}
+</script>
+
+</body>
+</html>
